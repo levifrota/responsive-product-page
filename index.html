@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce70dff995.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Enext Store</title>
+    <link rel="icon" rel="shortcut icon" href="public/logo1.png" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/lightslider.css" />
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/lightslider.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo-enext-nav" src="public/enext-logo.png" />
+
+      <nav class="navbar">
+        <a href="#novidades">Novidades</a>
+        <a href="#basicos">Básicos</a>
+        <a href="#essenciais">Essenciais</a>
+        <a href="#categorias">Feminino</a>
+        <a href="#masculino">Masculino</a>
+        <a href="#feminino">Infantil</a>
+        <a href="#plus-size">Plus Size</a>
+        <a href="#sustentabilidade">Sustentabilidade</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-btn"></i>
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-shopping-cart" id="cart-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-form">
+        <input
+          type="search"
+          id="search-box"
+          placeholder="Procurando por algo?"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="total">Total : R$ 00,00</div>
+        <a href="#" class="btn checkout">Checkout</a>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>Fazer login</h3>
+        <input type="email" placeholder="seu email" class="box" />
+        <input type="password" placeholder="sua senha" class="box" />
+        <p>esqueceu sua senha? <a href="#">clique aqui</a></p>
+        <p>ainda não tem uma conta? <a href="#">crie agora</a></p>
+        <input type="submit" value="Entrar" class="btn" />
+      </form>
+    </header>
+
+    <section class="product-details">
+      <div class="image-slider">
+        <div class="product-images">
+          <img src="public/product image 1.png" class="active" alt="" />
+          <img src="public/product image 2.png" alt="" />
+          <img src="public/product image 3.png" alt="" />
+          <img src="public/product image 4.png" alt="" />
+        </div>
+      </div>
+      <div class="details">
+        <h2 class="product-brand">Camisa Calvin Klein Básica Verde</h2>
+        <p class="product-short-des">Descrição rápida do produto</p>
+        <span class="product-price"> R$ 76,90 </span>
+        <span class="product-actual-price">R$ 109,90</span>
+        <span class="product-discount">(30% OFF)</span>
+
+        <p class="product-sub-heading">Escolha o tamanho:</p>
+
+        <input
+          type="radio"
+          name="size"
+          value="pp"
+          checked
+          hidden
+          id="pp-size"
+        />
+        <label for="pp-size" class="size-radio-btn check">PP</label>
+        <input type="radio" name="size" value="p" hidden id="p-size" />
+        <label for="p-size" class="size-radio-btn">P</label>
+        <input type="radio" name="size" value="m" hidden id="m-size" />
+        <label for="m-size" class="size-radio-btn">M</label>
+        <input type="radio" name="size" value="g" hidden id="g-size" />
+        <label for="g-size" class="size-radio-btn">G</label>
+        <input type="radio" name="size" value="gg" hidden id="gg-size" />
+        <label for="gg-size" class="size-radio-btn">GG</label>
+
+        <button class="btn cart-btn">Adicionar ao carrinho</button>
+        <button class="btn">lista de desejos</button>
+      </div>
+    </section>
+
+    <section class="detail-des">
+      <h2 class="heading">Descrição</h2>
+      <p class="des">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+        consequuntur numquam cum? Dolorem sit quaerat maxime et nihil, dolor
+        deserunt modi, alias suscipit commodi sapiente, rem doloribus qui minima
+        quasi.
+      </p>
+    </section>
+
+    <h2 style="padding: 0 10vw; margin-bottom: 30px; font-size: 30px">
+      Quem viu, também gostou:
+    </h2>
+    <section class="slider">
+      <ul id="autoWidth" class="cs-hidden">
+        <li class="item-a">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card1.png" alt="1" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-b">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card2.png" alt="2" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-c">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card3.png" alt="3" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-d">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card4.png" alt="4" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-e">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card5.png" alt="5" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-f">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card6.png" alt="6" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-g">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card7.png" alt="7" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-h">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card8.png" alt="8" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-i">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card9.png" alt="9" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-j">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card10.png" alt="10" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-k">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card11.png" alt="11" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+        <li class="item-l">
+          <div class="box">
+            <div class="slide-img">
+              <img src="public/card12.png" alt="12" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">Comprar</a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <div class="type">
+                <a href="#">Vestido Florido</a>
+                <span>Hering</span>
+              </div>
+              <a href="#" class="price">R$ 69,90</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="logo">
+          <img class="logo-enext-footer" src="public/enext-logo.png" />
+          <hr
+            style="width: 80%; text-align: left; margin-left: 0; color: #fff"
+          />
+          <p>Powered by</p>
+          <img class="logo-vtex" src="public/banner--logo-vtex.png" />
+        </div>
+        <div class="footer-section about">
+          <h2 class="title-footer">Sobre Nós</h2>
+          <p>
+            Nós transformamos as pessoas para o futuro! Buscamos ser referência
+            no desenvolvimento do mercado digital ao trazer soluções completas e
+            serviços para comércio eletrônico e marketing cloud. Conheça nosso
+            método de trabalho que potencializa a Experiência Digital:
+            Aquisição, Conversão e Relacionamento.
+          </p>
+          <ul class="list">
+            <li>
+              <a href="https://www.facebook.com/enextconsultoria">
+                <i class="fab fa-facebook fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/enext_/?hl=pt-br">
+                <i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/enext-ecommerce"
+                ><i class="fab fa-linkedin-in fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section categories">
+          <h2 class="title-footer">Categorias</h2>
+          <ul class="list-categories">
+            <li><a href="#">Feminino</a></li>
+            <li><a href="#">Masculino</a></li>
+            <li><a href="#">Infantil</a></li>
+            <li><a href="#">Plus Size</a></li>
+            <li><a href="#">Lançamentos</a></li>
+            <li><a href="#">Outlet</a></li>
+            <li><a href="#">Black Friday</a></li>
+          </ul>
+        </div>
+        <div class="footer-section institutional">
+          <h2 class="title-footer">Institucional</h2>
+          <ul class="list-institutional">
+            <li><a href="#">Nossas Lojas</a></li>
+            <li><a href="#">Grupo Enext</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Espaço Lojista</a></li>
+            <li><a href="#">Meus Pedidos</a></li>
+            <li><a href="#">Blog Enext</a></li>
+          </ul>
+        </div>
+        <div class="footer-section doubts">
+          <h2 class="title-footer">Dúvidas</h2>
+          <ul class="list-doubts">
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Perguntas Frequentes</a></li>
+            <li><a href="#">Privacidade e Segurança</a></li>
+            <li><a href="#">Fretes e Entrega</a></li>
+            <li><a href="#">Trocas e Devoluções</a></li>
+            <li><a href="#">Política de Pagamento</a></li>
+            <li><a href="#">Fale Conosco</a></li>
+            <li><a href="#">Preferências de Cookies</a></li>
+            <li><a href="#">Editar Consentimento</a></li>
+          </ul>
+        </div>
+        <div class="footer-section payments">
+          <h2 class="title-footer">Pagamento</h2>
+          <ul class="list">
+            <li><i class="fas fa-barcode fa-2x"></i></li>
+            <li><i class="fab fa-cc-amex fa-2x"></i></li>
+            <li><i class="fab fa-cc-mastercard fa-2x"></i></li>
+            <li><i class="fab fa-cc-visa fa-2x"></i></li>
+            <li><i class="fab fa-paypal fa-2x"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright ©
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          | Todos os direitos reservados | As fotos aqui veiculadas, logotipo e
+          marca são de propriedade do Grupo Enext. Design feito com
+          <i class="fas fa-heart"></i> por
+          <a href="https://www.linkedin.com/in/levi-frota-31212b163/"
+            >Levi Frota</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./js/header.js"></script>
+  <script type="text/javascript" src="./js/product.js"></script>
+</html>
