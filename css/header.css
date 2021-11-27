@@ -7,6 +7,22 @@
   --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
   --outline-hover: 0.2rem solid var(--black);
 }
+.header {
+  height: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 5%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 0.5rem;
+  background: #a51d1db9;
+  box-shadow: var(--box-shadow);
+}
+
 section {
   padding: 1rem;
 }
@@ -16,6 +32,7 @@ section {
 }
 
 .btn {
+  width: auto;
   margin-top: 1rem;
   display: inline-block;
   padding: 0.8rem 3rem;
@@ -24,25 +41,20 @@ section {
   border: 0.2rem solid var(--black);
   color: var(--black);
   cursor: pointer;
-  background: none;
+  background: #eee;
+}
+
+.btn.checkout {
+  background: #eee;
+  color: var(--black);
+  display: flex;
+  margin-right: 2rem;
 }
 
 .btn.checkout:hover {
-  background: var(--orange);
+  background: #e42222;
+  transition: 0.3s linear;
   color: #fff;
-}
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  background: #a51d1d;
-  box-shadow: var(--box-shadow);
 }
 
 .header .navbar a {
@@ -59,9 +71,8 @@ section {
 }
 
 .header .icons i {
-  width: 3rem;
-  line-height: 4rem;
-  border-radius: 0.5rem;
+  width: 1.5rem;
+  line-height: 2rem;
   color: #eee;
   font-size: 1.5rem;
   margin-left: 0.3rem;
@@ -85,7 +96,7 @@ section {
   right: -110%;
   width: 50rem;
   height: 5rem;
-  background: #eee;
+  background: #dfdfdf;
   border-radius: 0.5rem;
   overflow: hidden;
   display: flex;
@@ -94,6 +105,9 @@ section {
 }
 
 .header .search-form.active {
+  box-shadow: var(--box-shadow);
+  transition: 0.4s linear;
+  background-color: #000;
   right: 2rem;
   transition: 0.4s linear;
 }
@@ -104,7 +118,7 @@ section {
   background: none;
   text-transform: none;
   font-size: 1.6rem;
-  color: var(--black);
+  color: #eee;
   padding: 0 1.5rem;
 }
 
@@ -112,14 +126,14 @@ section {
   font-size: 2.2rem;
   padding-right: 1.5rem;
   padding-left: 0.5rem;
-  color: var(--black);
+  color: #eee;
   cursor: pointer;
 }
 
-/*.header .search-form label:hover {
-  color: rgb(245, 118, 118);
-  transition: 0.4s linear;
-}*/
+.header .search-form label:hover {
+  color: #e42222;
+  transition: 0.3s linear;
+}
 
 .header .shopping-cart {
   position: absolute;
@@ -133,8 +147,10 @@ section {
 }
 
 .header .shopping-cart.active {
-  right: 2rem;
   transition: 0.4s linear;
+  background-color: #000;
+  right: 2rem;
+  color: #eee;
 }
 
 .header .shopping-cart .box {
@@ -143,20 +159,11 @@ section {
   gap: 1rem;
   position: relative;
   margin: 1rem 0;
+  color: #eee;
 }
 
 .header .shopping-cart .box img {
   height: 10rem;
-}
-
-.header .shopping-cart .box .fa-trash {
-  font-size: 2rem;
-  position: absolute;
-  top: 50%;
-  right: 2rem;
-  cursor: pointer;
-  color: var(--light-color);
-  transform: translateY(-50%);
 }
 
 .header .shopping-cart .box .fa-trash:hover {
@@ -165,13 +172,13 @@ section {
 }
 
 .header .shopping-cart .box .content h3 {
-  color: var(--black);
+  color: #eee;
   font-size: 1.7rem;
   padding-bottom: 1rem;
 }
 
 .header .shopping-cart .box .content span {
-  color: var(--light-color);
+  color: #eee;
   font-size: 1.6rem;
 }
 
@@ -183,13 +190,12 @@ section {
   font-size: 2.5rem;
   padding: 1rem 0;
   text-align: center;
-  color: var(--black);
+  color: #eee;
 }
 
 .header .shopping-cart .btn {
   display: block;
   text-align: center;
-  margin: 1rem;
 }
 
 .header .login-form {
@@ -200,7 +206,7 @@ section {
   box-shadow: var(--box-shadow);
   padding: 2rem;
   border-radius: 0.5rem;
-  background: #fff;
+  background: #000;
   text-align: center;
 }
 
@@ -212,7 +218,7 @@ section {
 .header .login-form h3 {
   font-size: 2.5rem;
   text-transform: uppercase;
-  color: var(--black);
+  color: #eee;
 }
 
 .header .login-form .box {
@@ -229,18 +235,19 @@ section {
 .header .login-form p {
   font-size: 1.4rem;
   padding: 0.5rem 0;
-  color: var(--light-color);
+  color: #eee;
 }
 
 .header .login-form p a {
-  color: var(--orange);
+  color: #e44a4a;
   text-decoration: underline;
 }
 @media (max-width: 511px) {
   html {
     font-size: 62.5%;
   }
-  footer {
+  footer,
+  .des {
     font-size: medium;
   }
   .header .login-form {
@@ -250,9 +257,18 @@ section {
     width: auto;
   }
 }
-@media (max-width: 1184px) {
+@media (max-width: 1218px) {
   #menu-btn {
     display: inline-block;
+  }
+
+  #login-btn {
+    padding-right: 0.75rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
   }
 
   .header .search-form {
@@ -280,13 +296,12 @@ section {
     margin: 2rem 2.5rem;
     display: block;
   }
-}
-
-@media (max-width: 450px) {
-  .heading {
-    font-size: 2.5rem;
+  .button {
+    display: flex;
+    justify-content: center;
   }
 }
+
 @media (max-width: 850px) {
   .logo-enext-nav {
     width: 20%;
