@@ -16,3 +16,13 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
 }
+@media (max-width: 511px) {
+  .fas {
+    font-size: x-large !important;
+    margin-right: 1.5rem;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

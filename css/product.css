@@ -14,11 +14,11 @@
 
 .product-details {
   width: 100%;
-  padding-top: 10%;
+  padding-top: 150px;
   padding-bottom: 15%;
   padding-left: 0.5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .image-slider {
@@ -119,7 +119,7 @@ details .product-brand {
 .btn {
   width: 15rem;
   padding: 20px;
-  border-radius: none;
+  border-radius: 10px;
   border: 1px solid #383838;
   color: #383838;
   font-size: 20px;
@@ -134,10 +134,21 @@ details .product-brand {
   color: #fff;
 }
 
+.cart-btn:hover {
+  background: #eee;
+  color: #383838;
+  transition: 0.3s ease-in-out;
+}
+
+.wishlist:hover {
+  transition: 0.3s ease-in-out;
+  background: #383838;
+  color: #eee;
+}
+
 .detail-des {
   padding: 0 10vw;
   padding-bottom: 5vw;
-  text-transform: capitalize;
 }
 
 .heading {
@@ -158,7 +169,7 @@ details .product-brand {
     padding-bottom: 5%;
   }
   .image-slider {
-    margin-bottom: 15%;
+    margin-bottom: 150px;
   }
   .details {
     width: 60%;
@@ -166,9 +177,12 @@ details .product-brand {
     justify-content: center;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .heading .des {
     font-size: 600;
+  }
+  h2 .product-brand {
+    font-size: 900;
   }
   .size-radio-btn {
     width: 50px;

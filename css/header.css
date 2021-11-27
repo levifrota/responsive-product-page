@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: space-around;
   padding-left: 0.5rem;
-  background: #a51d1db9;
+  background: #a51d1d;
   box-shadow: var(--box-shadow);
 }
 
@@ -31,7 +31,7 @@ section {
   width: 10vw;
 }
 
-.btn {
+.bttn {
   width: auto;
   margin-top: 1rem;
   display: inline-block;
@@ -44,14 +44,14 @@ section {
   background: #eee;
 }
 
-.btn.checkout {
+.bttn.checkout {
   background: #eee;
   color: var(--black);
   display: flex;
   margin-right: 2rem;
 }
 
-.btn.checkout:hover {
+.bttn.checkout:hover {
   background: #e42222;
   transition: 0.3s linear;
   color: #fff;
@@ -243,9 +243,6 @@ section {
   text-decoration: underline;
 }
 @media (max-width: 511px) {
-  html {
-    font-size: 62.5%;
-  }
   footer,
   .des {
     font-size: medium;
@@ -257,7 +254,7 @@ section {
     width: auto;
   }
 }
-@media (max-width: 1218px) {
+@media (max-width: 1220px) {
   #menu-btn {
     display: inline-block;
   }
@@ -302,8 +299,8 @@ section {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 985px) {
   .logo-enext-nav {
-    width: 20%;
+    width: 100px;
   }
 }
