@@ -102,3 +102,8 @@ a {
     opacity: 1;
   }
 }
+@media (max-width: 480px) {
+  .slider {
+    width: 140% !important;
+  }
+}

@@ -8,7 +8,7 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  display: flex !important;
+  display: flex;
   justify-content: flex-end;
   flex-direction: column;
   background: #ebe6e6;
