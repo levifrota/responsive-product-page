@@ -199,4 +199,14 @@ details .product-brand {
   }
 }
 @media (max-width: 475px) {
+  .product-details {
+    margin-left: 15vw;
+  }
+}
+@media (max-width: 343px) {
+  .size-radio-btn {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+  }
 }
