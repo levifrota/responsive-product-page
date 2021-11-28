@@ -190,3 +190,13 @@ details .product-brand {
     line-height: 50px;
   }
 }
+@media (max-width: 510px) {
+  .cart-btn {
+    margin-left: 15%;
+  }
+  .wishlist {
+    margin-right: 9%;
+  }
+}
+@media (max-width: 475px) {
+}

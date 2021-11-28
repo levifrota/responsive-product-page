@@ -1,20 +1,22 @@
-footer {
+.footer {
   position: relative;
   width: 100%;
   height: auto;
   padding-top: 1.5rem;
-  background-color: #a51d1d;
+  background: #a51d1d;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   line-height: auto;
 }
+
 footer .footer-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
 }
+
 footer .footer-container .footer-section {
   font-weight: 600;
   margin-right: 2rem;
@@ -23,16 +25,19 @@ footer .footer-container .footer-section {
 footer .footer-container .footer-section.about {
   width: 20%;
 }
+
 footer .footer-container h2 {
   position: relative;
   color: #fff;
   font-weight: 500;
   margin-bottom: 15px;
 }
+
 .title-footer {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
+
 footer .footer-container h2:before {
   content: "";
   position: absolute;
@@ -42,19 +47,24 @@ footer .footer-container h2:before {
   height: 2px;
   background: #fff;
 }
+
 footer p {
   color: #d2d2d2;
 }
+
 .footer-section {
   width: auto;
 }
+
 .list {
   margin-top: 20px;
   display: flex;
 }
+
 .list li {
   list-style: none;
 }
+
 .list li a,
 .list li i {
   display: inline-block;
@@ -66,28 +76,34 @@ footer p {
   text-decoration: none;
   color: #fff;
 }
+
 .list li a:hover,
 .list li a i:hover,
 .payments .list li {
   color: #aba8a8;
   transition: all 0.3s ease;
 }
+
 .categories {
   position: relative;
 }
+
 .footer-section ul li {
   list-style: none;
 }
+
 .footer-section ul li a {
   color: #dddddd;
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
 }
+
 .footer-section ul li a:hover {
   color: #fff;
   transition: all 0.3s ease;
 }
+
 .institutional {
   margin-right: 0 !important;
 }
@@ -104,6 +120,7 @@ footer p {
 .logo-enext-footer {
   width: 8rem;
 }
+
 .copyright {
   font-weight: 600;
   width: 100%;
@@ -112,10 +129,12 @@ footer p {
   text-align: center;
   color: #aba8a8;
 }
+
 .copyright p a {
   color: #aba8a8;
   text-decoration: none;
 }
+
 .copyright p a:hover {
   color: #fff;
   transition: all 0.3s ease;
@@ -126,19 +145,28 @@ footer p {
     padding-left: 1rem;
     flex-direction: column;
   }
+
   footer .footer-container .footer-section {
     margin-right: 0;
     margin-bottom: 2rem;
   }
+
   hr {
     width: 30% !important;
   }
+
   footer .footer-container .footer-section.about,
   .footer-section.categories,
   .footer-container .footer-section.payment {
-    width: auto;
+    width: 100%;
   }
+
   .copyright {
     padding: 8px 40px;
+  }
+}
+@media (max-width: 475px) {
+  footer {
+    width: 135% !important;
   }
 }
