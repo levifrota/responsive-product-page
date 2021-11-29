@@ -1,9 +1,10 @@
 a {
   text-decoration: none;
+  font-size: medium;
 }
 
 .box {
-  width: 300px;
+  width: 250px;
   box-shadow: 2px 2px 30px #00000033;
   border-radius: 10px;
   overflow: hidden;
@@ -12,14 +13,14 @@ a {
 }
 
 .slide-img {
-  height: 450px;
+  height: 350px;
   position: relative;
 }
 
 .slide-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   box-sizing: border-box;
 }
 
@@ -100,10 +101,5 @@ a {
   }
   100% {
     opacity: 1;
-  }
-}
-@media (max-width: 480px) {
-  .slider {
-    width: 140% !important;
   }
 }

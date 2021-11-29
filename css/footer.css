@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: auto;
   padding-top: 1.5rem;
   background: #a51d1d;
@@ -92,6 +92,13 @@ footer p {
   list-style: none;
 }
 
+hr {
+  height: 1px;
+  width: 80%;
+  text-align: left;
+  background: #fff;
+}
+
 .footer-section ul li a {
   color: #dddddd;
   text-decoration: none;
@@ -114,6 +121,7 @@ footer p {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 .logo-vtex,
@@ -163,10 +171,5 @@ footer p {
 
   .copyright {
     padding: 8px 40px;
-  }
-}
-@media (max-width: 475px) {
-  footer {
-    width: 140% !important;
   }
 }
