@@ -138,8 +138,11 @@ section {
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
-  width: 35rem;
+  width: 20rem;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header .shopping-cart.active {
@@ -232,6 +235,8 @@ section {
   font-size: 1.4rem;
   padding: 0.5rem 0;
   color: #eee;
+  display: flex;
+  flex-direction: column;
 }
 
 .header .login-form p a {
@@ -247,7 +252,10 @@ section {
     width: 25rem;
   }
   .header .shopping-cart {
-    width: auto;
+    width: 18rem;
+    right: -150%;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 1220px) {
@@ -301,7 +309,6 @@ section {
   }
 }
 @media (max-width: 400px) {
-  .header .login-form,
   .header .navbar {
     right: -150%;
     width: 18rem;
@@ -315,5 +322,14 @@ section {
   }
   .header .icons i {
     margin-left: auto;
+  }
+}
+@media (max-width: 430px) {
+  .header .login-form,
+  .header .shopping-cart {
+    width: 18rem;
+    right: -150%;
+    display: flex;
+    flex-direction: column;
   }
 }
